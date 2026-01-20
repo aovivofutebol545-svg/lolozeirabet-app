@@ -27,10 +27,11 @@ jobs:
 
       - name: Build Debug APK
         run: |
-          ./gradle-8.2/bin/gradle :app:assembleDebug
+          cd LolozeirabetApp
+          ../gradle-8.2/bin/gradle :app:assembleDebug
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: apk-debug
-          path: app/build/outputs/apk/debug/*.apk
+          path: LolozeirabetApp/app/build/outputs/apk/debug/*.apk
