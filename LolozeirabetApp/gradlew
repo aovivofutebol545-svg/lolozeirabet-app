@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+# Simplified gradlew launcher (requires gradle-wrapper.jar). If missing, open in Android Studio and run "Gradle > wrapper".
+DIR="$(cd "$(dirname "$0")" && pwd)"
+java -jar "$DIR/gradle/wrapper/gradle-wrapper.jar" "$@"
